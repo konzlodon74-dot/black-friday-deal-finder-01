@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Door-Buster Ledger — Black Friday Deal Finder 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="kicker">Black Friday · 27 Nov 2026 · Cyber Monday to 30 Nov</p>
+  <h1>The Door-Buster Ledger</h1>
+  <p class="sub">28 deals checked today at Amazon, Best Buy, Walmart and Target. Every card shows the sale price, the usual price, when it was checked, where it was read, and whether it is really a deal.</p>
+</header>
+<main>
+  <section id="list-view">
+    <div class="controls" role="search">
+      <label>Search <input id="search" type="search" placeholder="Try: AirPods, OLED, Dyson…"></label>
+      <label>Category <select id="cat"></select></label>
+      <label>Store <select id="store"></select></label>
+      <label>Min discount <select id="discount">
+        <option value="0">Any</option><option value="25">25%+</option><option value="40">40%+</option><option value="50">50%+</option>
+      </select></label>
+      <label>Sort <select id="sort">
+        <option value="score">Best score first</option><option value="discount">Biggest discount</option><option value="price">Lowest price</option>
+      </select></label>
+    </div>
+    <p id="count" class="count"></p>
+    <div id="grid" class="grid"></div>
+  </section>
+  <section id="detail-view" hidden></section>
+</main>
+<footer>
+  <p>How to read the verdict: <strong>NEW LOW</strong> = lowest price tracked · <strong>STRONG</strong> = well below usual · <strong>ROUTINE</strong> = a normal holiday cut. Score blends discount depth with the verdict. Prices move fast during Black Friday — the store page is final.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
